@@ -1,13 +1,86 @@
-*{
-    /*Tirar a Margem geral da página*/
-    margin: 0;
+* {
+  /*Tirar a Margem geral da página*/
+  margin: 0;
+  padding: 0;
+  /*Mantem a largura da caixa que eu coloquei (nao a minha medida + medida default)*/
+  box-sizing: 0;
 }
 
-body{
-    background-color: #09090A;
-    color: white;
-    /*place-items so funciona com display*/
-    display: grid;
-    place-items: center;
-    height: 100vh;
+body {
+  background-color: #09090a;
+  color: white;
+  /*place-items so funciona com display*/
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  /*Joga um pra cada lado*/
+  justify-content: space-between;
+  padding: 48px;
+}
+button {
+  /*Medida da largura da caixa*/
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8b5fc8;
+  background-color: transparent;
+  color: white;
+  /*Disposição dos meus elementos*/
+  /*Elementos ficam flexíveis*/
+  display: flex;
+  align-items: center;
+
+  /*Espaços entre os elementos*/
+  gap: 12px;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+form {
+  /* Um ao lado do outro*/
+  display: flex;
+}
+.days {
+  /* Um ao lado do outro*/
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+.day {
+  /* Um ao lado do outro*/
+  display: flex;
+  /* Muda a disposição*/
+  flex-direction: column;
+  /* Coloca um gap entre elementos*/
+  gap: 24px;
+}
+.day div {
+  margin-bottom: 8px;
+  width: 64px;
+  height: 25px;
+
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  /* tailwind/violet/400 */
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  background: #18181b;
+}
+
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
 }
