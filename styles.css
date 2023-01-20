@@ -42,6 +42,7 @@ button {
 form {
   /* Um ao lado do outro*/
   display: flex;
+  padding: 0 48px;
 }
 .days {
   /* Um ao lado do outro*/
@@ -67,6 +68,21 @@ form {
   line-height: 125%;
   color: #a1a1aa;
   text-align: center;
+}
+.habits {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 24px;
+}
+.habit {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 input {
   appearance: none;
